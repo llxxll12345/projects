@@ -1,6 +1,4 @@
-<script type="text/javascript">
-        //initializing styles and fashion!
-        function $(str) {
+function $(str) {
 	        return document.getElementById(str);
         } //get from document
         function $tag(str,target) {
@@ -240,5 +238,4 @@
                 window.eventList[ind] = obj;
             }
             setTimeout(resume, mytime);
-        }*/                                                                   
-    </script>
+        }*/                                                              
