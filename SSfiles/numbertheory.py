@@ -7,20 +7,21 @@ def prime(n):
 			return False
 	return True
 
-def perfect(n):
-	#check if n is perfect
+def factors(n):
 	sum = 0
 	for i in range(1, n):
 		if n % i == 0:
 			sum += i
+	return sum
+	
+def perfect(n):
+	#check if n is perfect
+	sum = factors(n)
 	return sum == n
 
 def abundant(n):
 	#check if n is abundant
-	sum = 0
-	for i in range(1, n):
-		if n % i == 0:
-			sum += i
+	sum = factors(n)
 	return sum > n
 
 def narcissistic(str1):
